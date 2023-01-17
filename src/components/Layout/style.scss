@@ -1,0 +1,77 @@
+@import '../../style/colors.scss';
+
+.Header {
+  height: 90px;
+  font-size: 16px;
+  color: $text-color;
+  padding: 0 110px;
+  display: flex;
+  justify-content: space-between;
+
+  .Header-title {
+    font-family: 'CAT Linz', sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 90px;
+    letter-spacing: 0.225em;
+  }
+
+  .Header-menu {
+    display: flex;
+    justify-content: flex-end;
+    padding: 32px 0;
+
+    .Header-user {
+      text-transform: uppercase;
+    }
+
+    .Header-logout {
+      margin-left: 32px;
+      color: $main-color;
+    }
+  }
+}
+
+.Footer {
+    color: $text-color;
+
+  .Footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+    padding: 0 105px;
+    letter-spacing: 0.03em;
+    line-height: 18px;
+    margin-bottom: 16px;
+
+    .Footer-content-title {
+        font-family: 'Mulish-Bold', sans-serif;
+        font-size: 14px; 
+        margin-bottom: 10px;  
+    }
+    .Footer-content-text {
+        font-size: 11px;
+
+      .Footer-contacts {
+        min-width: 220px;
+
+        p {
+            margin: 0;
+        }
+
+        p.Footer-phone {
+            margin-bottom: 10px;
+        }
+      }
+    }
+  }
+    
+  .Footer-copyright {
+    background: #000000;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 105px;
+    font-size: 9px;
+    line-height: 11px;
+  }
+}

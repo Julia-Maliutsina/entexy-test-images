@@ -20,15 +20,16 @@
   src: url('./style/fonts/CATLinz_1.8.ttf');
 }
 
+
 .App {
   background: $background-color;
   font-family: 'Mulish', sans-serif;
-  .App-header {
-  }
+}
 
-  .App {
-  }
+* {
+  box-sizing: border-box;
+}
 
-  .App-footer {
-  }
+body {
+  margin: 0;
 }
