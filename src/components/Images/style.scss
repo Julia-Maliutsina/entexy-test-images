@@ -4,9 +4,11 @@
   height: calc(100vh - 90px);
   padding: 25px 80px 25px 105px;
   display: flex;
+  align-items: center;
 
   .Banner-info {
     width: 50%;
+    height: 60%;
     .Banner-title {
       font-family: 'CAT Linz', sans-serif;
       color: $text-color;
@@ -45,7 +47,7 @@
 
   .Banner-image {
     width: 50%;
-    height: 100%;
+    height: 80%;
     background: url('../../images/Macbook_Mockup.png') no-repeat;
     background-size: contain;
 

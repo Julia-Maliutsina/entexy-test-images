@@ -42,7 +42,6 @@
     padding: 0 105px;
     letter-spacing: 0.03em;
     line-height: 18px;
-    margin-bottom: 16px;
 
     .Footer-content-title {
         font-family: 'Mulish-Bold', sans-serif;
@@ -62,6 +61,33 @@
         p.Footer-phone {
             margin-bottom: 10px;
         }
+      }
+    }
+
+    .Footer-payment {
+      display: flex;
+      justify-content: space-between;
+      height: 30px;
+      width: 100%;
+      margin: 25px 0;
+
+      .MaestroLogo {
+        width: 30%;
+        height: 100%;        
+        background: url('../../images/Maestro_Logo.png') no-repeat;
+        background-size: contain;
+      }
+      .MastercardLogo {
+        width: 30%;
+        height: 100%;
+        background: url('../../images/Mastercard_Logo.png') no-repeat;
+        background-size: contain;
+      }
+      .VisaLogo {
+        width: 30%;
+        height: 100%;
+        background: url('../../images/Visa_Logo.png') no-repeat;
+        background-size: contain;
       }
     }
   }

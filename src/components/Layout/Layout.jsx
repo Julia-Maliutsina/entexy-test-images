@@ -1,9 +1,13 @@
+import { Link } from 'react-router-dom';
+
 import './style.scss'
 
 const Layout = ({ children }) => (
     <div>
       <header className="Header">
-        <div className="Header-title">Lorem</div>
+        <Link to='/images'>
+          <div className="Header-title">Lorem</div>
+        </Link>
         <div className="Header-menu">
         <div className="Header-user">Username</div>
         <div className="Header-logout">Logout</div>
@@ -18,6 +22,11 @@ const Layout = ({ children }) => (
           <div className="Footer-content-title">Lorem</div>
           <div className="Footer-content-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus nisl tincidunt eget nullam non nisi est sit amet.
+          </div>
+          <div className='Footer-payment'>
+            <div className='VisaLogo'></div>
+            <div className='MastercardLogo'></div>
+            <div className='MaestroLogo'></div>
           </div>
         </div>
         <div className="Footer-content-item">

@@ -1,0 +1,58 @@
+@import '../../style/colors.scss';
+
+.Image {
+  display: flex;
+  padding: 40px 105px 80px 105px;
+  justify-content: space-between;
+
+  .Image-picture {
+    width: 60%;
+    max-height: 525px;
+
+    img {
+      width: 100%;
+      border-radius: 16px;
+    }
+  }
+
+  .Image-info {
+    width: 35%;
+    height: 160px;
+    background: $secondary-text-color;
+    border-radius: 16px;
+    padding: 30px 18px;
+
+    .Image-info-title {
+      font-family: 'CAT Linz', sans-serif;
+      text-transform: uppercase;
+      font-size: 30px;
+      letter-spacing: 0.02em;
+      color: $text-color;
+    }
+
+    .Image-info-detail {
+      display: flex;
+      justify-content: space-between;
+      div {
+
+        .Image-info-detail-titles {
+          width: fit-content;
+          padding: 4px 15px;
+          background: #FF91101A;
+          text-transform: capitalize;
+          border-radius: 100px;
+          color: $main-color;
+          margin: 16px auto;
+        }
+        
+        .Image-info-detail-text {
+          color: $text-color;
+          font-size: 15px;
+          line-height: 19px;
+          text-align: center;
+        }
+
+      }
+    }
+  }
+}

@@ -1,12 +1,14 @@
+import { Link } from 'react-router-dom';
+
 import './style.scss';
 
-const AllImages = ({imagesArray}) => (
-  <div className='AllImages'>
+const AllImages = ({imagesArray, innerRef}) => (
+  <div className='AllImages' ref={innerRef}>
     <div className='AllImages-title'>
       All images
     </div>
     <div className='AllImages-grid'>
-      {imagesArray.map((img)=><div key={img.url} className='AllImages-grid-item' style={{background: 'url(' + img.download_url + ')', backgroundSize: 'cover'}}></div>)}
+      {imagesArray.map((img)=><Link to={`${img.id}`} key={img.id} ><div  className='AllImages-grid-item' style={{background: 'url(' + img.download_url + ')', backgroundSize: 'cover'}}></div></Link>)}
     </div>
   </div>
 );
