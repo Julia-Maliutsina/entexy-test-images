@@ -1,0 +1,10 @@
+.LogIn{
+  display: flex;
+  .LogIn-background {
+    width: 40%;
+    margin-left: -75px;
+    height: 100vh;
+    background: url('../../images/background.jpg') no-repeat;
+    background-size: contain;
+  }
+}

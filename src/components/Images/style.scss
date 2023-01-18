@@ -1,4 +1,5 @@
 @import '../../style/colors.scss';
+@import '../../style/buttons.scss';
 
 .Banner {
   height: calc(100vh - 90px);
@@ -29,18 +30,13 @@
       text-transform: uppercase;
     }
     .Banner-button {
-      background: $main-color;
-      color: $secondary-text-color;
+      @include button;
       width: 280px;
       height: 52px;
-      border-radius: 90px;
-      text-transform: uppercase;
       padding: 16px 82px;
 
       &:hover{
-        background: $secondary-text-color;
-        color: $text-color;
-        cursor: pointer;
+        @include hovered-button;
       }
     }
   }

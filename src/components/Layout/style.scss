@@ -28,6 +28,11 @@
     .Header-logout {
       margin-left: 32px;
       color: $main-color;
+
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
     }
   }
 }
