@@ -1,22 +1,22 @@
-import { Link } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 
 import './style.scss'
 
-const Layout = ({ children }) => (
-    <div>
-      <header className="Header">
-        <Link to='/images'>
-          <div className="Header-title">Lorem</div>
-        </Link>
-        <div className="Header-menu">
-        <div className="Header-user">Username</div>
-        <div className="Header-logout">Logout</div>
-        </div>
-      </header>
-      <div className="App-content">
-          {children}
+const Layout = ({ children, user, LogOut }) => (
+  <div>
+    <header className="Header">
+      <Link to='/images'>
+        <div className="Header-title">Lorem</div>
+      </Link>
+      <div className="Header-menu">
+      <div className="Header-user">{user}</div>
+      <div className="Header-logout" onClick={LogOut}>Logout</div>
       </div>
-      <footer className="Footer">
+    </header>
+    <div className="App-content">
+        {children}
+    </div>
+    <footer className="Footer">
       <div className="Footer-content">
         <div className="Footer-content-item">
           <div className="Footer-content-title">Lorem</div>
@@ -53,8 +53,8 @@ const Layout = ({ children }) => (
         <p>2022-2023 All rights reserved</p>
         <p>Site is developed by ME</p>
       </div>
-      </footer>
-    </div>
+    </footer>
+  </div>
 );
 
 export default Layout;

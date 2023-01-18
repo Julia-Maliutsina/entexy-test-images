@@ -1,1 +1,1 @@
-export {default} from './ImagePage';
+export {default} from './ImagePageContainer';
