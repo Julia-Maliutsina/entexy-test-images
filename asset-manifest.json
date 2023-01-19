@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/entexy-test-images/static/css/main.ce8d1972.css",
-    "main.js": "/entexy-test-images/static/js/main.7f56f40c.js",
+    "main.js": "/entexy-test-images/static/js/main.6bb3ae44.js",
     "static/js/787.7916beaf.chunk.js": "/entexy-test-images/static/js/787.7916beaf.chunk.js",
     "static/media/CATLinz_1.8.ttf": "/entexy-test-images/static/media/CATLinz_1.8.15173512743e7bcf4866.ttf",
     "static/media/background.jpg": "/entexy-test-images/static/media/background.97d43eb07ba2bc7468a7.jpg",
@@ -12,11 +12,11 @@
     "static/media/Img.png": "/entexy-test-images/static/media/Img.4850a8db4b033cd17078.png",
     "index.html": "/entexy-test-images/index.html",
     "main.ce8d1972.css.map": "/entexy-test-images/static/css/main.ce8d1972.css.map",
-    "main.7f56f40c.js.map": "/entexy-test-images/static/js/main.7f56f40c.js.map",
+    "main.6bb3ae44.js.map": "/entexy-test-images/static/js/main.6bb3ae44.js.map",
     "787.7916beaf.chunk.js.map": "/entexy-test-images/static/js/787.7916beaf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ce8d1972.css",
-    "static/js/main.7f56f40c.js"
+    "static/js/main.6bb3ae44.js"
   ]
 }
