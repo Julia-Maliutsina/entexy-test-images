@@ -1,6 +1,6 @@
 {
   "homepage": "https://julia-maliutsina.github.io/entexy-test-images",
-  "name": "entexy-test-image",
+  "name": "entexy-test-images",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
