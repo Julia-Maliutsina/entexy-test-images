@@ -11,6 +11,7 @@ const Layout = ({ children, user, LogOut }) => (
       <div className="Header-menu">
       <div className="Header-user">{user}</div>
       <div className="Header-logout" onClick={LogOut}>Logout</div>
+      <div className="Header-logout-icon" onClick={LogOut}></div>
       </div>
     </header>
     <div className="App-content">
@@ -48,6 +49,11 @@ const Layout = ({ children, user, LogOut }) => (
             </div>
           </div>
         </div>
+        <div className='Footer-payment-mobile'>
+            <div className='VisaLogo'></div>
+            <div className='MastercardLogo'></div>
+            <div className='MaestroLogo'></div>
+          </div>
       </div>
       <div className="Footer-copyright">
         <p>2022-2023 All rights reserved</p>

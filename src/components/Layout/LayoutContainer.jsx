@@ -14,6 +14,8 @@ const LayoutContainer = ({ children }) => {
     navigate('/login');
   }
 
+  console.log(user);
+
   return <Layout children={children} user={user} LogOut={LogOut} />
 };
 

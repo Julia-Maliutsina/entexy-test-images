@@ -1,4 +1,4 @@
-import Layout from 'components/Layout/Layout';
+import {Layout} from 'components/Layout';
 import Banner from 'components/Images/Banner';
 import AllImages from 'components/Images/AllImages';
 

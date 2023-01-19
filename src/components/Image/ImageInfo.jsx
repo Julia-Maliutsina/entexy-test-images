@@ -2,7 +2,7 @@ import './style.scss';
 
 const ImageInfo = ({image}) => (
   <div className='Image'>
-    <div className='Image-picture' /* style={{background: 'url(' + image.download_url + ') no-repeat', backgroundSize: 'cover'}} */> 
+    <div className='Image-picture'> 
     <img src={image.download_url} alt={image.author} />
     </div>
     <div className='Image-info'>
