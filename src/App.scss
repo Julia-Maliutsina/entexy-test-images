@@ -1,0 +1,40 @@
+@import './style/colors.scss';
+
+@font-face {
+  font-family: Mulish;
+  src: url('./style/fonts/Mulish-Medium.ttf');
+}
+
+@font-face {
+  font-family: Mulish-Regular;
+  src: url('./style/fonts/Mulish-Regular.ttf');
+}
+
+@font-face {
+  font-family: Mulish-Bold;
+  src: url('./style/fonts/Mulish-Bold.ttf');
+}
+
+@font-face {
+  font-family: CAT Linz;
+  src: url('./style/fonts/CATLinz_1.8.ttf');
+}
+
+
+.App {
+  background: $background-color;
+  font-family: 'Mulish', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}

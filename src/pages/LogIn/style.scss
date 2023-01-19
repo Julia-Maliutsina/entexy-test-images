@@ -1,0 +1,26 @@
+@import 'style/breakpoints.scss';
+
+@media only all and (max-width: $breakpoint-large) {
+  .LogIn{
+    display: flex;
+    .LogIn-background {
+      width: 40%;
+      margin-left: -75px;
+      height: 100vh;
+      background: url('../../images/background.jpg') no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+@media only all and (max-width: $breakpoint-tablet) {
+  .LogIn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .LogIn-background {
+      display: none;
+    }
+  }
+}

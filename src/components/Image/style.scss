@@ -1,0 +1,138 @@
+@import 'style/colors.scss';
+@import 'style/breakpoints.scss';
+
+@media only all and (max-width: $breakpoint-large) {
+  .Image {
+    display: flex;
+    padding: 40px 105px 80px 105px;
+    justify-content: space-between;
+    .Image-picture {
+      width: 60%;
+      max-height: 525px;
+      img {
+        width: 100%;
+        border-radius: 16px;
+      }
+    }
+    .Image-info {
+      width: 35%;
+      height: 160px;
+      background: $secondary-text-color;
+      border-radius: 16px;
+      padding: 30px 18px;
+      .Image-info-title {
+        font-family: 'CAT Linz', sans-serif;
+        text-transform: uppercase;
+        font-size: 30px;
+        letter-spacing: 0.02em;
+        color: $text-color;
+      }
+      .Image-info-detail {
+        display: flex;
+        justify-content: space-between;
+        div {
+          .Image-info-detail-titles {
+            width: fit-content;
+            padding: 4px 15px;
+            background: #FF91101A;
+            text-transform: capitalize;
+            border-radius: 100px;
+            color: $main-color;
+            margin: 16px auto;
+          }
+          .Image-info-detail-text {
+            color: $text-color;
+            font-size: 15px;
+            line-height: 19px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only all and (max-width: $breakpoint-desktop) {
+  .Image {
+    padding: 40px 80px 80px 80px;
+    .Image-picture {
+      width: 50%;
+    }
+    .Image-info {
+      width: 45%;
+      height: fit-content;
+    }
+  }
+}
+
+@media only all and (max-width: $breakpoint-tablet) {
+  .Image {
+    display: flex;
+    padding: 30px 80px 50px 80px;
+    justify-content: flex-start;
+    flex-direction: column;
+    .Image-picture {
+      width: 80%;
+      max-height: 525px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .Image-info {
+      width: 80%;
+      margin: 20px auto;
+      height: fit-content;
+      border-radius: 16px;
+      padding: 20px 15px;
+      .Image-info-title {
+        font-size: 24px;
+      }
+      .Image-info-detail {
+        div {
+          .Image-info-detail-titles {
+            width: fit-content;
+            padding: 4px 10px;
+            margin: 10px auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only all and (max-width: $breakpoint-mobile) {
+  .Image {
+    padding: 25px 16px 10px 16px;
+    .Image-picture {
+      width: 100%;
+      max-height: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .Image-info {
+      width: 100%;
+      margin: 20px auto 0 auto;
+      height: fit-content;
+      border-radius: 16px;
+      padding: 20px 15px;
+      .Image-info-title {
+        font-size: 24px;
+        margin-bottom: 6px;
+      }
+      .Image-info-detail {
+        div {
+          .Image-info-detail-titles {
+            width: fit-content;
+            padding: 4px 15px;
+            margin: 14px auto;
+            font-size: 14px;
+            line-height: 18px;
+          }
+          .Image-info-detail-text {
+            font-size: 16px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+}

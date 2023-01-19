@@ -1,0 +1,149 @@
+@import 'style/colors.scss';
+@import 'style/buttons.scss';
+@import 'style/breakpoints.scss';
+
+@media only all and (max-width: $breakpoint-large) {
+  .LogIn-container {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .LogIn-form {
+      text-align: left;
+      width: fit-content;
+      max-width: 600px;
+
+      .LogIn-form-title {
+        font-family: 'CAT Linz', sans-serif;
+        color: $text-color;
+        font-weight: 400;
+        font-size: 30px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+      }
+
+      .LogIn-form-inputs {
+        position: relative;
+        input {
+          width: 600px;
+          height: 44px;
+          background: $input-color;
+          border: $border;
+          border-radius: 75px;
+          font-family: 'Mulish-Regular', sans-serif;
+          font-size: 14px;
+          line-height: 19px;
+          letter-spacing: 0.03em;
+          color: #7F7F7F;
+          margin: 14px 0;
+          padding: 12.5px 20px;
+        }
+
+        .LogIn-form-submit {
+          @include button;
+          text-align: center;
+          text-transform: capitalize;
+          width: 160px;
+          height: 40px;
+          padding: 10px 45px;
+          margin-top: 53.5px;
+          border-radius: 75px;
+
+          &:hover {
+            @include hovered-button;
+          }
+        }
+
+        .LogIn-form-error {
+          position: absolute;
+          left: 20px;
+          font-family: 'Mulish';
+          font-size: 14px;
+          line-height: 19px;
+          letter-spacing: 0.03em;
+          color: $error-color;
+        }
+      }
+    } 
+  }
+}
+
+@media only all and (max-width: $breakpoint-desktop) {
+  .LogIn-container {
+    .LogIn-form {
+      padding-left: 20px;
+      .LogIn-form-title {
+        font-size: 30px;
+        margin-bottom: 15px;
+      }
+
+      .LogIn-form-inputs {
+        input {
+          width: 400px;
+          height: 36px;
+          border-radius: 60px;
+          margin: 14px 0;
+          padding: 8.5px 15px;
+        }
+
+        .LogIn-form-submit {
+          width: 140px;
+          height: 36px;
+          padding: 8px 35px;
+          margin-top: 30px;
+          border-radius: 60px;
+        }
+
+        .LogIn-form-error {
+          left: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media only all and (max-width: $breakpoint-tablet) {
+  .LogIn-container {
+    width: 80%;
+    .LogIn-form {
+      padding-left: 0;
+      .LogIn-form-title {
+        text-align: center;
+        font-size: 26px;
+      }
+      .LogIn-form-inputs {
+        width: fit-content;
+        input {
+          width: 100%;
+        }
+        .LogIn-form-error {
+          left: 0; 
+          right: 0; 
+          width: 100%; 
+          text-align: center;
+        }
+        .LogIn-form-submit {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+  }
+}
+
+@media only all and (max-width: $breakpoint-mobile) {
+  .LogIn-container {
+    .LogIn-form {
+      .LogIn-form-inputs {
+        .LogIn-form-error {
+          font-size: 12px;
+        }
+        .LogIn-form-submit {
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+}

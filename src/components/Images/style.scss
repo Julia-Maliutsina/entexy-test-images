@@ -1,0 +1,228 @@
+@import 'style/colors.scss';
+@import 'style/buttons.scss';
+@import 'style/breakpoints.scss';
+
+@media only all and (max-width: $breakpoint-large) {
+  .Banner {
+    height: calc(100vh - 90px);
+    padding: 25px 80px 25px 105px;
+    display: flex;
+    align-items: center;
+    .Banner-info {
+      width: 50%;
+      height: 60%;
+      .Banner-title {
+        font-family: 'CAT Linz', sans-serif;
+        color: $text-color;
+        font-weight: 400;
+        font-size: 75px;
+        line-height: 71px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+      .Banner-text {
+        color: $text-color;
+        margin-bottom: 27px;
+        font-size: 12px;
+        line-height: 26px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+      }
+      .Banner-button {
+        @include button;
+        width: 280px;
+        height: 52px;
+        padding: 16px 82px;
+        &:hover{
+          @include hovered-button;
+        }
+      }
+    }
+    .Banner-image {
+      width: 50%;
+      height: 80%;
+      background: url('../../images/Macbook_Mockup.png') no-repeat;
+      background-size: contain;
+      div {
+        width: 50%;
+        height: 100%;
+        background: url('../../images/Img.png') no-repeat;
+        background-size: contain;
+        margin-top: -90px;
+        margin-left: 40px;
+      }
+    }
+  }
+
+  .AllImages {
+    padding: 54px 105px;
+    width: 100%;
+    .AllImages-title {
+      color: $text-color;
+      font-family: 'CAT Linz', sans-serif;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 29px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+    .AllImages-grid{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+      .AllImages-grid-item{
+        height: 234px;
+        border-radius: 15px;
+      }
+    }
+  }
+}
+
+@media only all and (max-width: $breakpoint-desktop) {
+  .Banner {
+    padding: 15px 60px 15px 80px;
+    .Banner-info {
+      width: 60%;
+      height: 70%;
+      .Banner-title {
+        font-size: 52px;
+        line-height: 60px;
+        margin-bottom: 10px;
+      }
+      .Banner-button {
+        width: 200px;
+        height: 46px;
+        padding: 14px 48px;
+      }
+    }
+    .Banner-image {
+      width: 40%;
+      height: 70%;
+      div {
+        width: 40%;
+        height: 100%;
+        margin-top: -50px;
+      }
+    }
+  }
+
+  .AllImages {
+    padding: 40px 80px;
+    width: 100%;
+    .AllImages-title {
+      margin-bottom: 20px;
+    }
+    .AllImages-grid{
+      grid-template-columns: repeat(3, 1fr);
+      .AllImages-grid-item{
+        height: 190px;
+      }
+    }
+  }
+}
+
+@media only all and (max-width: $breakpoint-tablet) {
+  .Banner {
+    padding: 15px 50px 15px 80px;
+    height: calc(100vh - 70px);
+    .Banner-info {
+      width: 60%;
+      height: 80%;
+      .Banner-title {
+        font-size: 34px;
+        line-height: 38px;
+        margin-bottom: 10px;
+      }
+      .Banner-text {
+        margin-bottom: 15px;
+        font-size: 12px;
+        line-height: 18px;
+      }
+      .Banner-button {
+        width: 160px;
+        height: 40px;
+        padding: 12px 40px;
+        font-size: 12px;
+      }
+    }
+    .Banner-image {
+      width: 40%;
+      height: 70%;
+      div {
+        width: 40%;
+        height: 100%;
+        margin-top: -30px;
+      }
+    }
+  }
+
+  .AllImages {
+    padding: 20px 80px;
+    .AllImages-title {
+      margin-bottom: 20px;
+      font-size: 24px;
+      line-height: 24px;
+    }
+    .AllImages-grid{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media only all and (max-width: $breakpoint-mobile) {
+  .Banner {
+    padding: 5px 20px 5px 16px;
+    flex-direction: column-reverse;
+    height: fit-content;
+    .Banner-info {
+      width: 100%;
+      height: 250px;
+      .Banner-title {
+        font-size: 42px;
+        line-height: 43px;
+        margin-bottom: 20px;
+      }
+      .Banner-text {
+        margin-bottom: 40px;
+        font-size: 14px;
+        line-height: 22px;
+      }
+      .Banner-button {
+        width: 100%;
+        height: 52px;
+        padding: 16px 40px;
+        font-size: 16px;
+        line-height: 20px;
+        font-family: 'Mulish-Bold', sans-serif;
+        text-align: center;
+      }
+    }
+    .Banner-image {
+      width: 100%;
+      height: 254px;
+      background-position: center;
+      div {
+        width: 30%;
+        height: 100%;
+        margin-top: -44px;
+        margin-left: 24%;
+      }
+    }
+  }
+
+  .AllImages {
+    padding: 40px 16px 30px 16px;
+    width: 100%;
+    .AllImages-title {
+      margin-bottom: 20px;
+    }
+    .AllImages-grid{
+      grid-template-columns: repeat(2, 1fr);
+      .AllImages-grid-item{
+        height: 122px;
+      }
+    }
+  }
+}

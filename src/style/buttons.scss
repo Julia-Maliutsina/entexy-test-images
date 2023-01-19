@@ -1,0 +1,14 @@
+@import './colors.scss';
+
+@mixin button {
+  background: $main-color;
+  color: $secondary-text-color;
+  border-radius: 90px;
+  text-transform: uppercase;
+}
+
+@mixin hovered-button {
+  background: $secondary-text-color;
+  color: $text-color;
+  cursor: pointer;
+}
