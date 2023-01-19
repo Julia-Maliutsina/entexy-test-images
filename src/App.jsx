@@ -25,7 +25,7 @@ const App = () => {
     <QueryClientProvider client={queryClient}>
       <div className="App">
         <UserContext.Provider value={{user, setUser}}>
-          <BrowserRouter basename="/entexy-test-images">
+          <BrowserRouter>
             <Routes>
               {user &&
                 <Route path="/images">
