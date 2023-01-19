@@ -8,3 +8,5 @@ You can use the following data to authorize:
 
   `name`: editor12;
   `password`: qwe123.
+  
+  The app is deployed at https://entexy-test-images.vercel.app/
