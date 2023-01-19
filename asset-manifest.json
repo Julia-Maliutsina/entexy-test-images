@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/entexy-test-images/static/css/main.ce8d1972.css",
+    "main.js": "/entexy-test-images/static/js/main.7f56f40c.js",
+    "static/js/787.7916beaf.chunk.js": "/entexy-test-images/static/js/787.7916beaf.chunk.js",
+    "static/media/CATLinz_1.8.ttf": "/entexy-test-images/static/media/CATLinz_1.8.15173512743e7bcf4866.ttf",
+    "static/media/background.jpg": "/entexy-test-images/static/media/background.97d43eb07ba2bc7468a7.jpg",
+    "static/media/Macbook_Mockup.png": "/entexy-test-images/static/media/Macbook_Mockup.13eb6d7cf3d6b60adfd1.png",
+    "static/media/Mulish-Medium.ttf": "/entexy-test-images/static/media/Mulish-Medium.282d0d903ec6a342392f.ttf",
+    "static/media/Mulish-Bold.ttf": "/entexy-test-images/static/media/Mulish-Bold.84c15758a512288dca5b.ttf",
+    "static/media/Mulish-Regular.ttf": "/entexy-test-images/static/media/Mulish-Regular.e497fc540939821b16a0.ttf",
+    "static/media/Img.png": "/entexy-test-images/static/media/Img.4850a8db4b033cd17078.png",
+    "index.html": "/entexy-test-images/index.html",
+    "main.ce8d1972.css.map": "/entexy-test-images/static/css/main.ce8d1972.css.map",
+    "main.7f56f40c.js.map": "/entexy-test-images/static/js/main.7f56f40c.js.map",
+    "787.7916beaf.chunk.js.map": "/entexy-test-images/static/js/787.7916beaf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ce8d1972.css",
+    "static/js/main.7f56f40c.js"
+  ]
+}
